@@ -1,0 +1,444 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+summary::-webkit-details-marker
+  display: none
+
+a
+  text-decoration: none
+
+.center
+  padding-left: calc(50% - 570px)
+  padding-right: calc(50% - 570px)
+
+.header
+  background-color: #222
+  height: 75px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  &__search
+    margin-left: 41px
+
+  &__accoutn
+    margin-left: 34px
+    margin-right: 34px
+
+.promo
+  background: rgba(113, 103, 105, 0.08)
+  padding-left: calc(50% - 800px)
+  padding-right: calc(50% - 800px)
+  display: flex
+
+  &__left
+    width: 50%
+
+  &__img
+    width: 100%
+
+  &__right
+    width: 50%
+    background: #f1e4e6
+    display: flex
+    align-items: center
+    padding-left: 64px
+
+.catalog
+  display: flex
+  justify-content: space-between
+  padding-top: 64px
+
+  &__item
+    position: relative
+
+  &__item:not(:last-child)
+    margin-right: 30px
+
+  &__content
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  &__img
+    width: 100%
+
+  &-big
+    margin-top: 30px
+
+  &-big__img
+    width: 100%
+
+.product-box
+  padding-top: 97px
+
+  &__heading,
+
+  &__text
+    text-align: center
+
+.product
+  width: 360px
+  background: #f8f8f8
+  position: relative
+
+  &:hover .product__img
+    filter: brightness(50%)
+
+  &:hover .product__add
+    display: flex
+
+  &_mb
+    margin-bottom: 30px
+
+  &-content
+    padding-top: 48px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__info
+    padding: 24px 16px 20px
+
+  &__text
+    margin-top: 12px
+    margin-bottom: 18px
+
+  &__add
+    position: absolute
+    top: 188px
+    left: 111px
+    width: 139px
+    height: 44px
+    border: 1px solid white
+    align-items: center
+    justify-content: center
+    display: none
+
+  &__add:hover
+    box-shadow: 0 0 5px #fff
+
+.advantages
+  background: #222224
+  min-height: 340px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-right: 30px
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__item
+    align-items: center
+    text-align: center
+
+  &__item:not(:last-child)
+    margin-right: 45px
+
+  &__title
+    color: white
+    margin-bottom: 16px
+    margin-top: 28px
+
+  &__text
+    color: white
+
+.subscribe
+  display: flex
+  justify-content: space-between
+  align-items: center
+  min-height: 448px
+  background-image: url(img/bg-sub.png)
+  position: relative
+  background-repeat: no-repeat
+  background-size: cover
+
+  &__img
+    width: 96px
+    height: 96px
+
+  &__left
+    min-height: 225px
+    max-width: 360px
+    display: flex
+    flex-direction: column
+    text-align: center
+    align-items: center
+    position: relative
+    z-index: 10
+    justify-content: space-around
+
+  &__right
+    min-height: 145px
+    max-width: 360px
+    display: flex
+    flex-direction: column
+    text-align: center
+    align-items: center
+    position: relative
+    z-index: 10
+    justify-content: space-around
+
+  &__text
+    font-size: 20px
+    line-height: 24px
+    text-align: center
+
+  &__title
+    font-size: 25px
+
+  &__input
+    width: 100%
+    height: 100%
+    padding-left: 33px
+    padding-right: 75px
+    border: none
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 18px
+    color: black
+    border-radius: 20px 0 0 20px
+    background: #e1e1e1
+
+  &__button
+    padding: 10px
+    height: 100%
+    border: none
+    background-color: #f16d7f
+    color: #fff
+    cursor: pointer
+    border-radius: 0 20px 20px 0
+
+.form__subscribe
+  display: flex
+  width: 350px
+  height: 49px
+
+.footer
+  color: white
+  min-height: 79px
+  background: #222224
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  &__right
+    display: flex
+    flex-basis: 150px
+    justify-content: space-between
+
+  &__icon
+    background: white
+
+  &__bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__icon
+    display: block
+    width: 32px
+    height: 32px
+    background-color: #fff
+    color: black
+    text-align: center
+    line-height: 32px
+
+    &:hover
+      background-color: #f16d7f
+      color: #fff
+
+.fab .fa-facebook-f
+  color: black
+
+/* Catalog */
+
+.site-info
+  height: 148px
+  background: #f8f3f4
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  &__link
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #636363
+
+  &__link:last-child
+    font-weight: bold
+    color: #f16d7f
+
+  &__link:not(:last-child)::after
+    content: "/"
+    padding-left: 8px
+    padding-right: 8px
+
+  &__link:hover
+    color: #f16d7f
+
+  &__nav
+    display: flex
+
+.sort
+  padding-top: 39px
+  padding-bottom: 16px
+  display: flex
+  position: relative
+
+  &__filter
+    position: absolute
+    padding-top: 16px
+    padding-left: 16px
+
+  &__param
+    margin-left: calc(33.33333% + 15px)
+    display: flex
+    padding-top: 16px
+
+  &__filter_active:hover
+    width: 360px
+    background: #ffffff
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 16px
+    position: absolute
+    z-index: 1
+
+  &__filter_active:hover path
+    fill: #f16d7f
+
+  &__items
+    display: none
+
+  &__filter_active:hover .sort__items
+    display: block
+
+  &__ul
+    list-style-type: none
+
+  &__open
+    position: relative
+
+  &__size
+    background: #ffffff
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 8px 30px 8px 8px
+    display: flex
+    flex-direction: column
+    position: absolute
+    top: 24px
+    left: 8px
+    z-index: 1
+
+/* Product */
+
+.slider
+  text-align: center
+  align-items: center
+  background-color: #eaeaea
+
+  &__img
+    align-items: center
+    width: 100%
+    height: 100%
+
+.product-block
+  background-image: url(img/Background-product.png)
+  background-position: center
+
+  &__wrapper
+    max-width: 640px
+    min-height: 600px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    margin: auto
+    text-align: center
+    padding: 64px 0
+
+  &__title
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: #f16d7f
+
+  &__subtitle
+    font-weight: 300
+    font-size: 18px
+    line-height: 22px
+    color: #4d4d4d
+
+  &__text
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    color: #5e5e5e
+
+  &__cost
+    font-weight: 300
+    font-size: 24px
+    line-height: 29px
+    color: #ef5b70
+
+.sort__param_center
+  margin-left: 0
+
+.sort__open:not(last-child)
+  margin-right: 20px
+
+.line
+  width: 640px
+  border-bottom: 1px solid #eaeaea
+
+  &-top
+    width: 64px
+    border-bottom: 3px solid #f26376
+
+.product-block__button
+  font-size: 16px
+  line-height: 19px
+  color: #f26376
+  padding: 15px 55px
+  border: 1px solid #ef5b70
+
+  &_cart
+    display: flex
+    align-items: center
+
+  &_cart:before
+    align-items: center
+    content: ""
+    width: 40px
+    height: 26px
+    color: #ef5b70
+    display: inline-block
+    background-repeat: no-repeat
+    background-image: url(img/bascket.svg)
+
+/* Cart */
+
+.cart
+  display: flex
+
+.cart-left
+  display: flex
+  flex-direction: column
+  &__item
+    display: flex
