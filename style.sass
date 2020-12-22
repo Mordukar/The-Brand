@@ -108,8 +108,17 @@ a
   background: #F8F8F8
   position: relative
 
+  &__img
+    overflow: hidden
+    -moz-transition: all .4s ease-out
+    -o-transition: all .4s ease-out
+    -webkit-transition: all .4s ease-out
+
   &:hover .product__img
     filter: brightness(50%)
+    -webkit-transform: scale(1.08)
+    -moz-transform: scale(1.08)
+    -o-transform: scale(1.08)
 
   &:hover .product__add
     display: flex
@@ -577,3 +586,81 @@ a
 .line_price
   width: 100%
   background: #E2E2E2
+
+/* Registration */
+
+.registration
+  display: flex
+  padding-top: 64px
+  padding-bottom: 64px
+  min-height: 675px
+  justify-content: space-between
+  &__left
+    max-width: 360px
+    flex: 0 0 50%
+
+  &__right
+    max-width: 652px
+    flex: 0 0 50%
+
+  &__title
+    display: block
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    margin-bottom: 5px
+  &__big-title
+    font-weight: 300
+    font-size: 24px
+    line-height: 29px
+    margin-bottom: 15px
+
+  &__text
+    font-weight: 300
+    font-size: 24px
+    line-height: 29px
+    margin-bottom: 15px
+
+  &__list
+    font-weight: 300
+    font-size: 24px
+    line-height: 29px
+  &__input
+    margin-top: 13px
+    margin-bottom: 13px
+    padding: 13px 18px
+    border: groove
+    width: 100%
+
+  &__span
+    display: block
+    font-weight: 300
+    font-size: 13px
+    line-height: 16px
+    color: #B1B1B1
+    margin-top: 10px
+    margin-bottom: 40px
+
+  &__button:after
+    margin-left: 10px
+    align-items: center
+    content: ""
+    width: 20px
+    height: 12px
+    color: white
+    display: inline-block
+    background-repeat: no-repeat
+    background-image: url(../img/arrow.svg)
+
+.product-block__button_reg
+  padding: 16px 26px
+  max-width: 167px
+  color: white
+  background-color: #F16D7F
+.radio
+  &__wrapper
+    display: flex
+    margin-top: 10px
+    margin-bottom: 20px
+  &__item
+    margin-right: 15px
